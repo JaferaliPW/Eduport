@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Circles</title>
+  <style type="text/css">
+    .flex-container {
+      gap: 10px;
+      padding: 20px;
+      width: 220px; 
+    }
+
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .item1 { background-color: orange; }
+    .item2 { background-color: goldenrod; }
+    .item3 { background-color: magenta; }
+    .item4 { background-color: burlywood; }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item item1">1</div>
+    <div class="flex-item item2">2</div>
+    <div class="flex-item item3">3</div>
+    <div class="flex-item item4">4</div>
+  </div>
+</body>
+</html>

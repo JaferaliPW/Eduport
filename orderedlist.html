@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List</title>
+    <style>
+
+        /* FAQ1: How to remove numbering in orderedList?
+ */
+        /*
+            ol {
+                list-style-type: none;
+            }
+        */
+
+        /* FAQ2: How to create a scrollable list? */
+        /*
+            ol {
+                list-style-type: none;
+                height: 150px;
+                width: 200px;
+                overflow: auto;
+            }
+        */
+
+        /* Que 3. How to display list items inline? */
+        /*
+            ol {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 400px;
+            }
+        */
+
+        /* Que 4. How do you display li in column wise? */
+        /*
+            ol > li > ol {
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+            }
+        */
+
+        /* Que 5. How to change the options in the ordered list? */
+        /*
+            ol > li > ol {
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+                width: 450px;
+            }
+        */
+
+        /* Que 5. How to change the options in the ordered list? */
+        ol > li > ol {
+            columns: 2;
+        }
+
+        li {
+            margin-top: 10px;  
+        }
+
+        h3 {
+            margin-left: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- <ol type="a" start="5">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+        <li>React JS</li>
+    </ol> -->
+
+    <!-- <h1>Web Technologies</h1>
+    <ol>
+        <li>
+            FrontEnd
+            <ol type="a">
+                <li>HTML</li>
+                <li>CSS</li>
+            </ol>
+        </li>
+        <li>
+            BackEnd
+            <ol type="a">
+                <li>Node JS</li>
+                <li>MongoDB</li>
+            </ol>
+        </li>
+    </ol> -->
+
+
+    <!-- Que 2 -->
+    <!-- <h3>Support</h3>
+    <ol>
+        <li>Contact Us</li>
+        <li>FAQs</li>
+        <li>Size Guide</li>
+        <li>Shipping & Returns</li>
+        <li>Contact Us</li>
+        <li>FAQs</li>
+        <li>Size Guide</li>
+        <li>Shipping & Returns</li>
+    </ol> -->
+
+
+    <!-- Que 3 -->
+    <!-- <p>Which of the following is not an OOP language</p>
+    <ol>
+        <li>C</li>
+        <li>C++</li>
+        <li>java</li>
+        <li>JavaScript</li>
+    </ol> -->
+
+
+    <!-- Que 4 and 5 --> 
+    <ol>
+        <li>
+            Which of the following is not an OOP language?
+            <ol type="a" class="sub">
+                <li>C</li>
+                <li>C++</li>
+                <li>java</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>  
+    </ol>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee {
+            display: inline-block;
+            animation: marquee 3s linear infinite;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="marquee">
+        This is a marquee effect using keyframes!
+    </div>
+
+</body>
+
+</html>

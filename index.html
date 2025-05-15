@@ -3,16 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
-        
+    <title>Eduport</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: white;
+            border-bottom: 1px solid whitesmoke;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand img {
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .stat-card {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .course-card {
+            border: 1px solid white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+        .footer {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+        .footer .footer-brand {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .footer .footer-brand img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .footer .footer-social a {
+            margin: 0 10px;
+            color: gray;
+            font-size: 20px;
+        }
+        .footer .footer-section h5 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .footer .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        .footer .footer-section ul li a {
+            color: gray;
+            text-decoration: none;
+        }
+        .footer .footer-contact {
+            margin-top: 20px;
+        }
+        .footer .footer-contact img {
+            width: 120px;
+            margin-right: 10px;
+        }
+        .sidebar {
+            background-color: white;
+            padding: 20px;
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+        }
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: gray;
+            text-decoration: none;
+        }
+        .sidebar a i {
+            margin-right: 10px;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+        }
+        @media screen and (orientation: portrait) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 <body>
-        <nav>
-            <span>About</span>
-            <span>home</span>
-            <span>More items</span>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            Eduport
+            <img src="public/images/shortcut.jpeg" alt="Profile" width="40" height="40">
+        </div>
+        <div>
+            <a href="#" class="btn btn-outline-primary">Demos</a>
+            <a href="#" class="btn btn-outline-primary">Pages</a>
+            <a href="#" class="btn btn-outline-primary">Accounts</a>
+            <a href="#" class="btn btn-outline-primary">Megamenu</a>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+        <nav class="sidebar">
+            <a href="#"><i class="bi bi-grid"></i> Category</a>
+            <a href="#"><i class="bi bi-display"></i> Demos</a>
+            <a href="#"><i class="bi bi-file-earmark"></i> Pages</a>
+            <a href="#"><i class="bi bi-person"></i> Accounts</a>
+            <a href="#"><i class="bi bi-menu-button-wide"></i> Megamenu</a>
+            <input type="text" class="form-control mt-3" placeholder="Search">
         </nav>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-3 stat-card bg-warning">
+                    <h3><i class="bi bi-display"></i> 10K Online Courses</h3>
+                </div>
+                <div class="col-md-3 stat-card bg-secondary text-white">
+                    <h3><i class="bi bi-person"></i> 200+ Expert Tutors</h3>
+                </div>
+                <div class="col-md-3 stat-card bg-info text-white">
+                    <h3><i class="bi bi-people"></i> 60K+ Online Students</h3>
+                </div>
+                <div class="col-md-3 stat-card bg-success text-white">
+                    <h3><i class="bi bi-check-circle"></i> 6K+ Certified Courses</h3>
+                </div>
+            </div>
+
+            <h2 class="mt-5">Most Popular Courses</h2>
+            <div class="row">
+                <div class="col-md-4 course-card">
+                    <img src="public/images/course1.jpg" alt="Course 1" class="img-fluid">
+                    <h4>Web development</h4>
+                    <p>This contains HTML CSS</p>
+                </div>
+                <div class="col-md-4 course-card">
+                    <img src="public/images/course2.jpg" alt="Course 2" class="img-fluid">
+                    <h4>DevOPs</h4>
+                    <p>This contains software methodology and planning</p>
+                </div>
+                <div class="col-md-4 course-card">
+                    <img src="public/images/course3.jpeg" alt="Course 3" class="img-fluid">
+                    <h4>Data science</h4>
+                    <p>This contains xml and r language</p>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 footer-brand">
+                            <img src="public/images/eduport.png" alt="Eduport Logo">
+                            <p>Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 footer-section">
+                            <h5>Company</h5>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">News and Blogs</a></li>
+                                <li><a href="#">Library</a></li>
+                                <li><a href="#">Career</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 footer-section">
+                            <h5>Community</h5>
+                            <ul>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 footer-section">
+                            <h5>Teaching</h5>
+                            <ul>
+                                <li><a href="#">Become a teacher</a></li>
+                                <li><a href="#">How to guide</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer-section">
+                            <h5>Contact</h5>
+                            <p>Toll free: 1234567<br>(9:AM to 8:PM IST)</p>
+                            <p>Email: pwioi@gmail.com</p>
+                            <div class="footer-contact">
+                                <img src="public/images/google-play.png" alt="Google Play">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
